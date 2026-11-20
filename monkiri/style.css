@@ -1,0 +1,28 @@
+:root { color-scheme: dark; --text:#f2ebdb; --sub:#ada396; --bg:#1d1b1a; --paper:#2a2725; --line:#5c544f; --accent:#e56a4f; --shu:#db4a33; --head:#34302d; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; line-height:1.8; }
+header.bar { background:var(--shu); }
+header.bar div { max-width:760px; margin:0 auto; padding:10px 16px; font-weight:700; font-family:"Hiragino Mincho ProN", "Yu Mincho", serif; letter-spacing:.08em; }
+header.bar a { color:#fff; text-decoration:none; }
+main { max-width:760px; margin:20px auto 48px; padding:24px 16px 40px; background:var(--paper); border:1px solid var(--line); border-radius:6px; }
+@media (min-width:800px) { main { padding:28px 32px 44px; } }
+h1, h2 { font-family:"Hiragino Mincho ProN", "Yu Mincho", serif; }
+h1 { font-size:1.6rem; line-height:1.4; margin:0 0 8px; }
+h2 { font-size:1.15rem; margin:2em 0 .5em; padding:.1em 0 .1em .6em; border-left:6px solid var(--shu); }
+h3 { font-size:1.02rem; margin:1.6em 0 .3em; }
+p, li { font-size:1rem; }
+ol, ul { padding-left:1.4em; }
+a { color:var(--accent); }
+.lead { color:var(--sub); }
+.table-wrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; margin:.5em 0 1em; font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+th { background:var(--head); white-space:nowrap; }
+td:first-child { white-space:nowrap; font-weight:600; }
+@media (max-width:480px) { td:first-child { white-space:normal; min-width:5.5em; } }
+.meta { margin-top:2.5em; color:var(--sub); font-size:.95rem; }
+nav { margin-bottom:1.5em; font-size:.95rem; }
+.links a { display:block; padding:14px 16px; margin:10px 0; border:1px solid var(--line); border-radius:8px; text-decoration:none; color:var(--text); background:var(--head); }
+.links a:hover { border-color:var(--shu); }
+.hero { display:flex; gap:16px; align-items:center; margin-bottom:8px; }
+.hero img { width:84px; height:84px; border-radius:20%; flex:none; }
