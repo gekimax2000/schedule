@@ -1,0 +1,28 @@
+:root { color-scheme: light; --text:#2e2721; --sub:#6b5b4a; --bg:#c6a275; --tag:#f6ead0; --edge:#d1bc90; --red:#c63a28; --indigo:#2b4472; --head:#efe0bf; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif; line-height:1.85; }
+header.bar { background:var(--tag); border-bottom:3px dashed var(--edge); }
+header.bar div { max-width:760px; margin:0 auto; padding:12px 16px; font-weight:700; letter-spacing:.08em; font-family:"Hiragino Mincho ProN", "Yu Mincho", serif; }
+header.bar a { color:var(--text); text-decoration:none; }
+main { position:relative; max-width:760px; margin:24px auto 48px; padding:24px 16px 40px 40px; background:var(--tag); border:1px solid var(--edge); border-radius:4px; clip-path:polygon(28px 0, 100% 0, 100% 100%, 28px 100%, 0 calc(100% - 28px), 0 28px); box-shadow:1px 2px 6px rgba(60,40,20,.25); }
+main::before { content:""; position:absolute; left:10px; top:40px; width:16px; height:16px; border-radius:50%; background:var(--bg); box-shadow:0 0 0 5px var(--edge); }
+@media (min-width:800px) { main { padding:30px 36px 46px 56px; } }
+h1 { font-size:1.55rem; line-height:1.4; margin:0 0 8px; font-family:"Hiragino Mincho ProN", "Yu Mincho", serif; }
+h2 { font-size:1.12rem; margin:2em 0 .6em; padding:.2em .7em; color:var(--red); border:2px solid var(--red); border-radius:6px; display:inline-block; }
+h3 { font-size:1.02rem; margin:1.6em 0 .3em; border-bottom:2px solid var(--edge); display:inline-block; }
+p, li { font-size:1rem; }
+ol, ul { padding-left:1.4em; }
+a { color:#1a5cc7; }
+.lead { color:var(--sub); }
+.table-wrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; margin:.5em 0 1em; font-size:.95rem; background:#fffaf0; }
+th, td { border:1px solid var(--edge); padding:8px 10px; text-align:left; vertical-align:top; }
+th { background:var(--head); white-space:nowrap; }
+td:first-child { white-space:nowrap; font-weight:600; }
+@media (max-width:480px) { td:first-child { white-space:normal; min-width:5.5em; } }
+.meta { margin-top:2.5em; color:var(--sub); font-size:.95rem; }
+nav { margin-bottom:1.5em; font-size:.95rem; }
+.links a { display:block; padding:13px 16px; margin:10px 0; border:1.5px solid var(--text); border-left:10px solid var(--red); border-radius:3px; text-decoration:none; color:var(--text); background:#fffaf0; }
+.links a:hover { background:var(--head); }
+.hero { display:flex; gap:16px; align-items:center; margin-bottom:8px; }
+.hero img { width:84px; height:84px; border-radius:20%; flex:none; }
