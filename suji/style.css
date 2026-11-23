@@ -1,0 +1,27 @@
+:root { color-scheme: light; --text:#172442; --sub:#5c6973; --bg:#d1d9d5; --paper:#f9f8f2; --grid:#4d948a; --line:#b9d3cc; --board:#122b61; --red:#d61f24; --head:#e3efe9; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif; line-height:1.85; }
+header.bar { background:var(--board); border-bottom:5px solid var(--grid); }
+header.bar div { max-width:760px; margin:0 auto; padding:12px 16px; font-weight:700; letter-spacing:.08em; }
+header.bar a { color:#fdfdfc; text-decoration:none; }
+main { max-width:760px; margin:24px auto 48px; padding:24px 16px 40px; background-color:var(--paper); background-image:linear-gradient(rgba(77,148,138,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(77,148,138,.13) 1px, transparent 1px); background-size:24px 24px; border:1px solid var(--grid); box-shadow:1px 2px 6px rgba(20,40,60,.2); }
+@media (min-width:800px) { main { padding:30px 36px 46px; } }
+h1 { font-size:1.55rem; line-height:1.4; margin:0 0 8px; color:var(--board); }
+h2 { font-size:1.12rem; margin:2em 0 .6em; padding:.25em .7em; color:#fdfdfc; background:var(--board); border-radius:3px; }
+h3 { font-size:1.02rem; margin:1.6em 0 .3em; color:var(--board); border-bottom:2px solid var(--grid); display:inline-block; }
+p, li { font-size:1rem; }
+ol, ul { padding-left:1.4em; }
+a { color:#1a5cc7; }
+.lead { color:var(--sub); }
+.table-wrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; margin:.5em 0 1em; font-size:.95rem; background:#fff; }
+th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+th { background:var(--head); white-space:nowrap; }
+td:first-child { white-space:nowrap; font-weight:600; }
+@media (max-width:480px) { td:first-child { white-space:normal; min-width:5.5em; } }
+.meta { margin-top:2.5em; color:var(--sub); font-size:.95rem; }
+nav { margin-bottom:1.5em; font-size:.95rem; }
+.links a { display:block; padding:13px 16px; margin:10px 0; border:1.5px solid var(--board); border-left:10px solid var(--board); border-radius:3px; text-decoration:none; color:var(--text); background:#fff; }
+.links a:hover { background:var(--head); }
+.hero { display:flex; gap:16px; align-items:center; margin-bottom:8px; }
+.hero img { width:84px; height:84px; border-radius:20%; flex:none; }
